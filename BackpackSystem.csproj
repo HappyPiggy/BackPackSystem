@@ -232,14 +232,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Data\BaseItem.cs" />
-    <Compile Include="Assets\Scripts\Data\SkillItem.cs" />
-    <Compile Include="Assets\Scripts\Data\WeaponItem.cs" />
-    <Compile Include="Assets\Scripts\UI\BackPackManager.cs" />
-    <Compile Include="Assets\Scripts\UI\DragItemUI.cs" />
-    <Compile Include="Assets\Scripts\UI\GridPanelUI.cs" />
-    <Compile Include="Assets\Scripts\UI\GridUI.cs" />
-    <Compile Include="Assets\Scripts\UI\ItemUI.cs" />
+    <Compile Include="Assets\Scripts\backPack\Data\BaseItem.cs" />
+    <Compile Include="Assets\Scripts\backPack\Data\SkillItem.cs" />
+    <Compile Include="Assets\Scripts\backPack\Data\WeaponItem.cs" />
+    <Compile Include="Assets\Scripts\backPack\Manager\BackPackManager.cs" />
+    <Compile Include="Assets\Scripts\backPack\UI\DragItemUI.cs" />
+    <Compile Include="Assets\Scripts\backPack\UI\GridPanelUI.cs" />
+    <Compile Include="Assets\Scripts\backPack\UI\GridUI.cs" />
+    <Compile Include="Assets\Scripts\backPack\UI\ItemUI.cs" />
+    <Compile Include="Assets\Scripts\reusableScroll\BaseCell.cs" />
+    <Compile Include="Assets\Scripts\reusableScroll\BaseCellManager.cs" />
+    <Compile Include="Assets\Scripts\reusableScroll\Driver.cs" />
+    <Compile Include="Assets\Scripts\reusableScroll\WeaponCell.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

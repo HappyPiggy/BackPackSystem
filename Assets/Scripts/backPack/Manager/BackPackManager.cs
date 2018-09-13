@@ -127,7 +127,7 @@ public class BackPackManager : MonoBehaviour {
     /// <param name="parent"></param>
     private void CreateItem(BaseItem item,Transform parent)
     {
-        var res = Resources.Load("item");
+        var res = Resources.Load("backPack/item");
         GameObject itemObj = GameObject.Instantiate(res) as GameObject;
 
         var itemUI = itemObj.GetComponent<ItemUI>();
@@ -157,7 +157,7 @@ public class BackPackManager : MonoBehaviour {
         itemDic[item3.Id] = item3;
         itemDic[item4.Id] = item4;
 
-        var res = Resources.Load("dragItem");
+        var res = Resources.Load("backPack/dragItem");
         GameObject dragItemObj = Instantiate(res) as GameObject;
         dragItemUI = dragItemObj.GetComponent<DragItemUI>();
         dragItemUI.transform.SetParent(transform);
@@ -176,7 +176,7 @@ public class BackPackManager : MonoBehaviour {
         if (isDrag)
         {
             Vector2 pos;
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(gridPanelUI.gameObject.transform as RectTransform,Input.mousePosition,null,out pos);
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(transform as RectTransform,Input.mousePosition,null,out pos);
             dragItemUI.UpdatePosition(pos);
         }
     }
