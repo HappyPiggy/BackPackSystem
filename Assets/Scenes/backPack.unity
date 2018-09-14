@@ -1139,6 +1139,16 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114338390566414522, guid: 85e376e00330f0b488acd8daffc76312,
+        type: 2}
+      propertyPath: m_Padding.m_Left
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114338390566414522, guid: 85e376e00330f0b488acd8daffc76312,
+        type: 2}
+      propertyPath: m_Padding.m_Right
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 85e376e00330f0b488acd8daffc76312, type: 2}
   m_IsPrefabParent: 0

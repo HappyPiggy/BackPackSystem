@@ -23,11 +23,11 @@ public class Driver :MonoBehaviour {
         baseCell = Instantiate(res as GameObject).GetComponent<BaseCell>();
 
         cellManager.Init(baseCell);
-        cellManager.SetParams(12,3,new Vector3(88,-62,0));
+        cellManager.SetParams(15,3,new Vector2 (0,0));
 
         weaponDataList.Clear();
         //模拟配置中读取的数据
-        for (int i = 0; i < 50; i++)
+        for (int i = 0; i < 100; i++)
         {
             var data = new WeaponData
             {

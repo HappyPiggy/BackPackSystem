@@ -21,4 +21,13 @@ public class WeaponCell : BaseCell {
         text.text = weaponData.name;
     }
 
+    public override float GetCellWidth()
+    {
+        return 150;
+    }
+
+    public override float GetCellHeight()
+    {
+        return 100;
+    }
 }

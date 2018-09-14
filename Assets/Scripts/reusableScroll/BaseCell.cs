@@ -5,7 +5,8 @@ using UnityEngine;
 /// <summary>
 /// 网格中item基类
 /// </summary>
-public abstract class BaseCell : MonoBehaviour {
+public abstract class BaseCell : MonoBehaviour
+{
 
     public int index;
     public object data;
@@ -21,28 +22,16 @@ public abstract class BaseCell : MonoBehaviour {
     /// <summary>
     /// 重用时更新数据
     /// </summary>
-    public virtual void UpdateInfo(int index,object data)
+    public virtual void UpdateInfo(int index, object data)
     {
         this.index = index;
         this.data = data;
     }
 
-    public void SetAnchors(Vector2 min, Vector2 max)
-    {
-        if(rectTransform==null)
-            rectTransform = GetComponent<RectTransform>();
-
-        rectTransform.anchorMin = min;
-        rectTransform.anchorMax = max;
-    }
 
 
-    public virtual float GetCellWidth()
-    {
-        return GetComponent<RectTransform>().sizeDelta.x;
-    }
-    public virtual float GetCellHeight()
-    {
-        return GetComponent<RectTransform>().sizeDelta.y;
-    }
+    public abstract float GetCellWidth();
+
+    public abstract float GetCellHeight();
 }
+
