@@ -240,6 +240,8 @@
     <Compile Include="Assets\Scripts\backPack\UI\GridPanelUI.cs" />
     <Compile Include="Assets\Scripts\backPack\UI\GridUI.cs" />
     <Compile Include="Assets\Scripts\backPack\UI\ItemUI.cs" />
+    <Compile Include="Assets\Scripts\pageScroll\PageItem.cs" />
+    <Compile Include="Assets\Scripts\pageScroll\PageScroll.cs" />
     <Compile Include="Assets\Scripts\reusableScroll\BaseCell.cs" />
     <Compile Include="Assets\Scripts\reusableScroll\BaseCellManager.cs" />
     <Compile Include="Assets\Scripts\reusableScroll\Driver.cs" />
